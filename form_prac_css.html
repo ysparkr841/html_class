@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form개인연습</title>
+	<style>
+		fieldset{width: 350px; background: #3399FF;}
+		legend{background: #0066CC ; font-size: 30px; border: 3px solid #003366; color: white;}
+		#sub1{background: #9999FF; font-size: 18px; border: 3px solid blue;}
+		#sub1:hover{background: blue; color: white;}
+		#res1{background: #FF9999; font-size: 18px; border: 3px solid red;}
+		#res1:hover{background: red; color: white;}		
+		
+	</style>
+</head>
+<body>
+	<div>
+		<form action="server.jsp" method="post">
+			<fieldset>
+				<legend>로그인</legend>
+					아이디:<br><input type="text" size="10" maxlength="15"><br>
+					비밀번호:<br><input type="password" size="10" maxlength="20"><br>
+					비밀번호 확인:<br><input type="password" size="10" maxlength="20"><br>
+					이름:<br><input type="text" size="10" maxlength="15"><br>
+					성별:<br><label><input type="radio" name="sx1">남자</label>
+					      <label><input type="radio" name="sx1">여자</label><br>
+					성별:<br><select>
+						<option>남자</option><option>여자</option>
+					      </select><br>
+					주민번호:<br><input type="text" size="5" maxlength="6"> - <input type="password" size="5" maxlength="7"><br>
+					언어:<br><label><input type="radio">한국어</label>
+				 	     <label><input type="radio">영어</label>
+					     <label><input type="radio">중국어</label>
+					     <label><input type="radio">일본어</label><br>
+					언어:<br><select multiple="multiple">
+						<option>한국어</option><option>영어</option><option>중국어</option><option>일본어</option>
+					      </select><br><br>
+				<input type="submit" value="작성완료" id="sub1">
+				<input type="reset" value="다시작성" id="res1">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
