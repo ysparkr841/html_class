@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>902prac_siteblock</title>
+	<style>
+	html, body{margin: 0; padding: 0; height: 100%;}
+	.header{width: 100%; height: 20%; background: #F3F1F5;}
+	.nav{width:20%; height: 70%; float: left; background: #F0D9FF;}
+	.section{width:60%; height: 70%; float: left; background: #BFA2DB;}
+	.aside{width:20%; height: 70%; float: left; background: #F0D9FF;}
+	.footer{width: 100%; height: 10%; clear: both; background: #7F7C82;}
+	#FR1{width: 100%; height: 98%;}
+	#table2{margin-left: auto; margin-right: auto; padding-top: 50px; }
+	#form1{font-size: 20px;}
+	#table1{padding-top: 40%;}
+	#td2{padding-top: 40%;}
+	#a1{text-decoration: none;border: 3px solid blue; background: skyblue; font-size: 20px;}
+	#a2{text-decoration: none;border: 3px solid red; background: pink; font-size: 20px;}
+	#a1:hover{background: blue; color: white;}
+	#a2:hover{background: red; color: white;}
+	#form2{border: 2px solid black; margin-top: 100px;}
+	#f2leg{text-align: center; background: #F0D9FF; font-size: 20px;}
+	#div1{padding-left: 30%; padding-right: auto;}
+	#div2{padding-left: 10%; font-size: 10px; padding-right: 10%;}
+		
+	</style>
+ </head>
+ <body>
+ 	<header class="header">
+				<table id="table2">
+		<tr>
+			<td>
+				<form id="form1">
+					검색:<input type="text" size="60%" autofocus placeholder="검색어를 입력하세요." >
+					<input type="submit" value="검색">
+					<!--<button type="submit">검색</button>도 가능-->
+				</form>
+			</td>
+		</tr>
+	</table>
+
+	</header>
+		<nav class="nav">
+				<table id="table1">
+		<tr>
+			<td id="td1">
+			<a href="http://www.incheon.go.kr" target="FRi1" id="a1">인천시청</a>
+			<br>:인천시청 홈페이지를 불러옵니다.
+			</td>
+		</tr>
+		<tr>
+			<td id="td2">
+			<a href="http://www.seoul.go.kr" target="FRi1" id="a2">서울시청</a>
+			<br>:서울시청 홈페이지를 불러옵니다.
+			</td>
+		</tr>
+	</table>
+		</nav>
+			<section class="section">
+				<iframe src="" name="FRi1" id="FR1"></iframe>
+			</section>
+		<aside class="aside">
+			<form id="form2">
+				<legend id="f2leg">---로그인---</legend>
+				아이디:<br>
+				<input type="text" size="47" maxlength="20"><br>
+				비밀번호:<br>
+				<input type="password" size="47" maxlength="20"><br>
+					<div id="div1">
+					<input type="submit" value="&nbsp&nbsp&nbsp확인&nbsp&nbsp&nbsp">
+					<button type="reset">다시입력</button>
+					</div>
+			</form>
+		</aside>
+	<footer class="footer">
+		<div id="div2">
+		<hr>
+		회사소개·비즈니스·검색등록·제휴문의·인재채용<br>
+		<hr>
+		이용약관·운영정책·청소년보호정책·위치기반서비스이용약관·개인정보처리방침·웹접근성안내·고객센터
+		</div>
+	</footer>
+  
+ </body>
+</html>
