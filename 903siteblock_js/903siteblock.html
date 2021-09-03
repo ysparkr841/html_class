@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+ <head>
+  <meta charset="UTF-8">
+  <title>block</title>
+  	<script>
+		function jmenu(){
+						document.write("환영합니다.");
+						}
+	</script>
+	<style>
+	 html, body{margin: 0; padding: 0; height: 100%;}
+		#header{width: 100%;height: 15%; text-align: center;}
+		#nav{width:15%; height: 70%; float: left; background: skyblue;}
+		#section{width:70%; height: 70%; float: left; background: #EDF6E5;}
+		#aside{width:15%; height: 70%; float: left; background: #FFBCBC;}
+		
+		a{text-decoration: none;}
+		a:hover{background: gray; color: white;}
+		ul{margin: auto; text-align: center; background: lightgray; width: 80%;}
+		li{display: inline-block; margin: 0px 80px;}
+		h4{color: black; margin: auto;}
+		legend{font-size: 19px;}
+		form{border: 3px solid black;}
+		div{margin-left: 55px;}
+		
+		
+
+	</style>
+ </head>
+	<body>
+
+		<header id="header">
+
+		<script>
+			jmenu();
+		</script>
+
+		<!--<h4>메뉴</h4>-->
+		<div id="SC1">검색:<input type="text" size="60"></div><br>
+			<ul>
+				<li><a href="http://www.icia.co.kr">인천일보아카데미</a></li>
+				<li><a href="http://www.incheon.go.kr">인천시청</a></li>
+				<li><a href="http://www.seoul.go.kr">서울시청</a></li>
+				<li><a href="http://www.naver.com">네이버</a></li>
+				<li><a href="http://www.daum.net">다음</a></li>
+			</ul><br>
+			
+		</header>
+		<hr>
+
+			<nav id="nav">
+				<form action="jsp.jsp" method="post">
+					<legend>로그인 정보</legend>
+					아이디:<br>
+					<input type="text" size="33" autofocus placeholder="아이디를 입력하세요."><br>
+					비밀번호:<br>
+					<input type="password" size="33" placeholder="비밀번호를 입력하세요."><br><br>
+					<div id="divbt"><input type="submit" value="확인"> <input type="reset" value="취소"></div>
+
+				</form>
+			</nav>
+
+			<section id="section">
+				
+			</section>
+
+			<aside id="aside">
+				
+			</aside>
+
+	</body>
+</html>
