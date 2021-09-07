@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		var c1=[10, 20, 30, 40]
+		var i;
+		for (i=0;i<4 ;i++ )
+		{
+			document.write(c1[i]);
+		}
+
+		document.write("<br><br><br><br><br><br>");
+		/*1행 4열의 table 태그를 만들어보자 tr td를 어디에 넣어야 할까?*/
+		/*for함수 안에 table과 tr태그를 넣어봄.*/
+		var c2=[11, 22, 33, 44];
+		var j;
+		
+		for (j=0;j<4 ;j++ )
+		{document.write("<table border=2><tr>");
+			document.write("<td>"+c2[j]+"</td>");
+		 document.write("</tr></table>");
+		}
+
+		/*이건 사실상
+			<table><tr><td></td></tr></table>
+			<table><tr><td></td></tr></table>
+			<table><tr><td></td></tr></table>
+			<table><tr><td></td></tr></table>
+			이런 식임. table이 4개가 있는 것. margin을 줘보면 더 확실함.
+		*/
+
+		document.write("<br><br><br><br><br><br>");
+	
+		/*form 함수 안에 tr태그와 td태그만 넣어봄*/
+		var c2=[11, 22, 33, 44];
+		var j;
+		document.write("<table border=2>");
+		for (j=0;j<4 ;j++ )
+		{document.write("<tr>");
+			document.write("<td>"+c2[j]+"</td>");
+		 document.write("</tr>");
+		}
+		document.write("</table>");
+
+		/*이건
+			<table>
+				<tr><td></td><tr>
+				<tr><td></td><tr>
+				<tr><td></td><tr>
+				<tr><td></td><tr>
+			</table>
+		이런 식임. table은 하나지만, 행이 4개고 열이 1개임.
+		*/
+		
+
+
+		document.write("<br><br><br><br><br><br>");
+		/*행이 1개이고, 열이 4개인 테이블을 만드려면 다음과 같이가 정답.*/
+		var c2=[11, 22, 33, 44];
+		var j;
+		document.write("<table border=2><tr>");
+		for (j=0;j<4 ;j++ )
+		{
+			document.write("<td>"+c2[j]+"</td>");
+		}
+		document.write("</tr></table>");
+
+		
+	</script>
+ </body>
+</html>
