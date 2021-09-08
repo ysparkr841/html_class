@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+
+	function calc(ff){
+		ff.cal_result.value = eval(ff.cal_inp.value)
+	}
+
+	function plus_bt(ff, bt1){
+		ff.cal_inp.value+= bt1
+	}
+</script>
+
+<style type="text/css">
+
+	form{border: 2px solid black; text-align: center; background-color: #152D35; width: 300px; height: 400px;}
+	#aa{border: 2px solid white; font-size: 15px; color: white; background-color: black;}
+	#bb{border: 2px solid white; font-size: 15px; color: white; background-color: black;}
+	#cc{border: 2px solid white; font-size: 15px; color: white; background-color: black;}
+
+	#a{padding: 0px 0%;background-image: url('./img/button0.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#b{padding: 0px 0%;background-image: url('./img/button1.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#c{padding: 0px 0%;background-image: url('./img/button2.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#d{padding: 0px 0%;background-image: url('./img/button3.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#e{padding: 0px 0%;background-image: url('./img/button4.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#f{padding: 0px 0%;background-image: url('./img/button5.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#g{padding: 0px 0%;background-image: url('./img/button6.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#h{padding: 0px 0%;background-image: url('./img/button7.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#i{padding: 0px 0%;background-image: url('./img/button8.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#j{padding: 0px 0%;background-image: url('./img/button9.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#k{padding: 0px 0%;background-image: url('./img/button+.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#l{padding: 0px 0%;background-image: url('./img/buttonMinus.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#m{padding: 0px 0%;background-image: url('./img/buttonmultiple.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#n{padding: 0px 0%;background-image: url('./img/buttonDivision.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	#o{padding: 0px 0%;background-image: url('./img/button=.png'); background-repeat: no-repeat; background-position:  0px 0px; background-repeat: no-repeat; width: 30px; height: 30px; border: 0px; cursor:pointer; outline: 0;background-color: #152D35;}
+	h3{border: 3px solid white; color: white; width: 100px; margin-left: 95px;}
+</style>
+
+
+</head>
+<body>
+<form>
+	<legend><h3>계산기</h3></legend>
+	<input id="aa" type="text" size="20" name="cal_inp"><br>
+	<input id="bb" type="text" size="20" name="cal_result"><br>
+	<input id="cc" type="reset" size="20" value="clear" text-align="center">
+<p>
+	<input id="a" type="button" onclick="plus_bt(this.form,'0');">
+	<input id="b" type="button" onclick="plus_bt(this.form,'1');">
+	<input id="c" type="button" onclick="plus_bt(this.form,'2');">
+	<input id="d" type="button" onclick="plus_bt(this.form,'3');">
+	<input id="e" type="button" onclick="plus_bt(this.form,'4');">
+</p><br>
+<p>
+	<input id="f" type="button" onclick="plus_bt(this.form,'5');">
+	<input id="g" type="button" onclick="plus_bt(this.form,'6');">
+	<input id="h" type="button" onclick="plus_bt(this.form,'7');">
+	<input id="i" type="button" onclick="plus_bt(this.form,'8');">
+	<input id="j" type="button" onclick="plus_bt(this.form,'9');">
+</p><br>
+<p>
+	<input id="k" type="button" onclick="plus_bt(this.form,'+');">
+	<input id="l" type="button" onclick="plus_bt(this.form,'-');">
+	<input id="m" type="button" onclick="plus_bt(this.form,'*');">
+	<input id="n" type="button" onclick="plus_bt(this.form,'/');">
+	<input id="o" type="button" onclick="calc(this.form);">
+</p><br>
+
+</form>
+</body>
+</html>
