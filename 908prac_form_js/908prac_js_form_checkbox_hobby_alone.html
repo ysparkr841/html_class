@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function ss(ff){
+			var open = ""
+			if(ff.cb1.checked){open+=ff.cb1.value+"\n"}
+			if(ff.cb2.checked){open+=ff.cb2.value+"\n"}
+			if(ff.cb3.checked){open+=ff.cb3.value+"\n"}
+			if(ff.cb4.checked){open+=ff.cb4.value+"\n"}
+			if(ff.cb5.checked){open+=ff.cb5.value+"\n"}
+				alert(open);
+		}
+	</script>
+</head>
+<body>
+	<form>
+<fieldset>
+		<legend>공개할 정보</legend>
+		<input type="checkbox" name="cb1" value="이름">이름<br>
+		<input type="checkbox" name="cb2" value="취미">취미<br>
+		<input type="checkbox" name="cb3" value="특기">특기<br>
+		<input type="checkbox" name="cb4" value="장점">장점<br>
+		<input type="checkbox" name="cb5" value="자기소개">자기소개<br>
+		<input type="button" onclick="ss(this.form);" value="결정">
+</fieldset>	
+	</form>
+</body>
+</html>

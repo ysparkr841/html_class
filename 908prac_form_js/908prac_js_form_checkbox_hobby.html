@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function check_hobby(ff1){
+		var hobbylist = ""
+		if(ff1.cb1.checked==true){hobbylist += ff1.cb1.value+"\n"};
+		if(ff1.cb2.checked==true){hobbylist += ff1.cb2.value+"\n"};
+		if(ff1.cb3.checked==true){hobbylist += ff1.cb3.value+"\n"};
+		if(ff1.cb4.checked==true){hobbylist += ff1.cb4.value+"\n"};
+		if(ff1.cb5.checked==true){hobbylist += ff1.cb5.value+"\n"};
+		alert(hobbylist);
+	}
+</script>
+
+</head>
+<body>
+	<form>
+       <fieldset>
+       		<legend>취미선택</legend>
+       		<input type="checkbox" name="cb1" value="노래">노래
+       		<input type="checkbox" name="cb2" value="게임">게임
+       		<input type="checkbox" name="cb3" value="티비시청">티비시청
+       		<input type="checkbox" name="cb4" value="음악감상">음악감상
+       		<input type="checkbox" name="cb5" value="독서">독서<br>
+       		<input type="button" onclick="check_hobby(this.form);" value="선택완료">
+       </fieldset>
+	</form>
+</body>
+</html>

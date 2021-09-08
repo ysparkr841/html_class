@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script type="text/javascript">
+
+	function majorcheck(ff){
+		document.write(ff.se.options[ff.se.selectedIndex].value);
+	}
+
+
+</script>
+
+<body>
+<form>
+
+<fieldset>
+<legend>전공선택</legend>
+<select name="se">
+	<option value="컴공">컴공</option>
+	<option value="전자">전자</option>
+	<option value="물류">물류</option>
+	<option value="아태">아태</option>
+	<option value="국통">국통</option>
+	<input type="button" onclick="majorcheck(this.form);" value="선택">
+</select>
+</fieldset>
+
+</form>
+</body>
+</html>

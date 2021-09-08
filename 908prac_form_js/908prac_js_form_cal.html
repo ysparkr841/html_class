@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function calc(ff){
+		ff.cal_result.value = eval(ff.cal_inp.value)
+	}
+</script>
+
+</head>
+<body>
+
+<form>
+	<input type="text" size="20" name="cal_inp"><br>
+	<input type="text" size="20" name="cal_result"><br>
+	<input type="button" onclick="calc(this.form);" value="계산">
+
+</form>
+
+</body>
+</html>

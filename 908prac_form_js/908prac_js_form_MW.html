@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check(){
+			var sexcheck = document.getElementsByName('sex')
+			for (var i = 0; i < 2; i++) {
+				if(sexcheck[i].checked==true){
+					alert(sexcheck[i].value);
+				}
+			};
+		}
+	</script>
+
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label><input type="radio" name="sex" value="여자">여자</label><br>
+			<label><input type="radio" name="sex" value="남자">남자</label><br>
+			<input type="button" onclick="check();" value="확인">
+		</fieldset>
+	</form>
+</body>
+</html>

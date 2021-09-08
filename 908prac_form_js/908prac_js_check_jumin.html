@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>주민체크</title>
+	<script type="text/javascript">
+	function jmcheck(fjm){
+		var ffjm = fjm.leftjumin.value + fjm.rightjumin.value;
+		if(comp(ffjm)==true){
+			alert("주민번호가 정확합니다.");
+			return true;
+		}  alert("주민번호가 틀렸습니다."); 
+		fjm.leftjumin.focus();
+		return false;
+
+	}
+
+	function comp(jumincomp){
+		
+		var jumintotal = 0;
+		var juminadd = "234567892345"/*12자리까지 곱해야됨. i가 0부터 시작*/
+		for (var i = 0; i < 12; i++) {
+			jumintotal= jumintotal+ parseInt(jumincomp.substring(i,i+1)) * parseInt(juminadd.substring(i,i+1));
+		};
+		jumintotal= 11-(jumintotal%11);
+		if(jumintotal==11){jumintotal=1;}
+		else if(jumintotal==10){jumintotal=0;}
+		if(jumintotal==parseInt(jumincomp.substring(12,13))) return true;
+	}
+
+	</script>
+</head>
+<body>
+
+<form name="InputForm" onsubmit="return jmcheck(this);">
+	주민번호:<br>
+	<input type="text" maxlength="6" size="6" name="leftjumin">-
+	<input type="password" maxlength="7" size="7" name="rightjumin">
+	<input type="submit" value="확인">
+
+</form>
+</body>
+</html>
