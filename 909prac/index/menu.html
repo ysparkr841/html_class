@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<script>
+	function menu(form){
+		if(form.url.selectedIndex !=0)
+			parent.right2.location = form.url.options[form.url.selectedIndex].value;
+			/*나보다 위, parent의 right2에 위치시켜줘. 이 right2는 name=right2인 프레임 target을 넣어주는데 다른 느낌으로 넣어주는것임. parent는 사실상 index의 파일을 말하는 것.*/
+	}
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+	<form>
+		<select name="url" onChange="menu(this.form)"><!-- onchange랑 onclick이랑 비슷함-->
+		<option selected>메뉴를 선택하세요.
+			<option value="me.html">나의소개
+			<option value="http://www.icia.co.kr">인천일보아카데미 소개
+			<option value="http://www.incheon.go.kr">인천시청
+			<option value="http://www.seoul.go.kr">서울시청
+		</select>
+	</form>
+ </body>
+</html>

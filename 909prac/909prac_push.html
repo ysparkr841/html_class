@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>select form 다중받기</title>
+
+  <script>
+  	function check(ff){
+		var result = [];
+		for (i=0;i<ff.length;i++ )
+		{if(ff[i].selected){result.push(ff[i].value) }/*result에 다시 opt의 배열들을 push한다. 다만 넣는데 if로 선택된 것만 넣어라. result는 스택이라고 보면 됨.*/
+		}
+		for (i=0;i<result.length ;i++ )
+		{document.write(result[i]);
+		document.write("<br>");
+		}
+		
+	}
+  </script>
+ </head>
+ <body>
+
+  <form>
+	<fieldset>
+		<legend>언어능력</legend>
+		<select id="ss" multiple="multiple">
+			<option value="한국어">한국어</option>
+			<option value="중국어">중국어</option>
+			<option value="일어">일어</option>
+			<option value="영어">영어</option>
+			<option value="아랍어">아랍어</option>
+		</select>
+		<input type="button" value="확인" onClick="check(ss);"><!--C 소문자도 괜찮은데 앞으로 자바할거면 습관들이자 뒤에 글자 첫음꺼는 대문자-->
+	</fieldset>
+  </form>
+
+
+ </body>
+</html>

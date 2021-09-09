@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+<script>
+	function coloroff(){
+		var color;
+		for (var i=15;i>=0 ;i-- )
+		{var i1 = ""+i;
+			if(i == 10) i1 = "a";
+			if(i == 11) i1 = "b";
+			if(i == 12) i1 = "c";
+			if(i == 13) i1 = "d";
+			if(i == 14) i1 = "e";
+			if(i == 15) i1 = "f";
+		}
+		color = "#" +i1+i1+i1+i1+i1+i1;
+		document.bgColor=color;
+	}
+		function coloron(){
+		var color;
+		for (var i=0;i<16 ;i++ )
+		{var i1 = ""+i;
+			if(i == 10) i1 = "a";
+			if(i == 11) i1 = "b";
+			if(i == 12) i1 = "c";
+			if(i == 13) i1 = "d";
+			if(i == 14) i1 = "e";
+			if(i == 15) i1 = "f";
+		}
+		color = "#" +i1+i1+i1+i1+i1+i1;
+		document.bgColor=color;
+	}
+</script>
+
+ </head>
+ <body>
+	<form>
+		<input type="button" onclick="coloroff();" value="블랙">
+		<input type="button" onclick="coloron();" value="화이트">
+	</form>
+ </body>
+</html>

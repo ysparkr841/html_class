@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+ </head>
+ <body>
+	<form>
+	<fieldset>
+		<legend>새로 생성된 윈도우 단기</legend>
+		<input type="button" value="현재 윈도우 닫기" onClick="self.close()">
+		<input type="button" value="바로 전 윈도우 닫기" onClick="opener.close()"><!--open으로 열어준 애를 닫아주는 것.-->
+	</fieldset>
+	</form>
+ </body>
+</html>
