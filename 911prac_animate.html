@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script src="../jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$('#box').animate({
+				top: 400, left: 400,
+			}, 2000);
+		    $('#box').hover(function(){
+				$(this).animate({
+			top: 00, left: 00}, 2000);
+				$('#box').animate({
+					top: 400, left: 400,
+				}, 2000);
+			});
+			 $('#box').click(function(){
+				$(this).animate({
+			width: '+=80', height: '+=80'}, 'fast');
+			});
+});
+
+	</script>
+  <title>Document</title>
+ <style>
+	#box{width: 200px; height: 200px; background: pink; position: absolute;}
+ </style>
+ </head>
+ <body>
+	<div id="box"></div>
+		
+	</div>
+ </body>
+</html>
