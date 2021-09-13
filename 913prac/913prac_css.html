@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Document</title>
+  <script>
+	$(function(){
+		var stu = $("#ff");
+		var ag = stu.find('#age');
+		var ss = stu.find('img');
+		ag.css('background','black','border','3px solid red');
+		ss.css('border','3px solid blue');
+	});
+  </script>
+ </head>
+ <body>
+  <div id="ff">
+		<div id="age">17</div>
+		<div></div>
+		<img src="../img/cat.jfif" id="ss" alt="cat">
+  </div>
+ </body>
+</html>

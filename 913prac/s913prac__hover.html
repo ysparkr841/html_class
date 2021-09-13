@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>document</title>
+
+  <style>
+	.bordered{border: 3px solid red}
+	div{background: yellow}
+  </style>
+ <script>
+$(function(){
+	$('#div1').hover(function(){
+						$('#div1').text('왔네요');	
+								},function(){
+									$('#div1').text('떠났네요.');
+								});/*마우스엔터와 마우스리브의 기능을 다 하는 hover*/
+});
+ </script>
+ </head>
+ <body>
+	<div id="div1">div!!!</div>
+ </body>
+</html>

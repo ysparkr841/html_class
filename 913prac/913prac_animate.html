@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+	#div1{background: pink; position: absolute; top: 0; left: 0; padding: 0px;}
+	
+</style>
+<script>
+ $(function ss(){
+	$('#div1').animate({top: 0,left: 600},500);
+	$('#div1').animate({top: 600,left: 600},500);
+	$('#div1').animate({top: 600,left: 0},500, function(){alert("animation");});
+	$('#div1').animate({top: 0,left: 0},500, ss);
+ });
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+		<div id="div1">
+			<img src="../img/cat.jfif" alt="고양이 아이콘">
+		</div>
+	
+</body>
+	
+</html>

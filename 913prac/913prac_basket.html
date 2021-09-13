@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>document</title>
+
+  <style>
+	#basket{background: skyblue; padding: 10px}
+	#apple{background: red; margin: 5px}
+	#banana{background: yellow; margin: 5px}
+	#orange{background: orange; margin: 5px}
+  </style>
+ <script>
+$(function(){
+	$('#apple').appendTo('#basket');
+	var orange=$('#orange')
+	$('#basket').append(orange);
+	var bas = $('#basket')
+	var bnn = $('#banana');
+	bas.append(bnn);
+});
+ </script>
+ </head>
+ <body>
+	<div id="basket">basket</div>
+	<div id="apple">apple</div>
+	<div id="banana">banana</div>
+	<div id="orange">orange</div>
+	
+
+ </body>
+</html>

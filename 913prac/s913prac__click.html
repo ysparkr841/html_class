@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<script src="../jquery-3.6.0.min.js"></script>
+  <title>document</title>
+  <style>
+	.bordered{border: 3px solid red}
+	div{background: yellow}
+  </style>
+ <script>
+$(function(){
+	$('#div1').click(function(){
+		$('#div1').html('<b>클릭되었습니다</b>');
+	});
+});
+ </script>
+ </head>
+ <body>
+	<div id="div1">div!!!!</div>
+
+ </body>
+</html>

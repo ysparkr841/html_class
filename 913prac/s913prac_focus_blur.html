@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>document</title>
+
+  <style>
+	input{border: 3px solid green; background: blue;}
+	.active{border: 3px solid red; background: skyblue;}
+  </style>
+ <script>
+$(function(){
+	$('#input1').focus(function(){
+			$(this).addClass('active');
+	});
+	$('#input1').blur(function(){
+			$(this).removeClass('active');
+	});
+});
+ </script>
+ </head>
+ <body>
+
+		<input type="text" id="input1">
+ 
+ </body>
+</html>

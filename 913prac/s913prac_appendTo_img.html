@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>document</title>
+
+  <style>
+	.bordered{border: 3px solid red}
+	div{background: yellow}
+  </style>
+ <script>
+$(function(){
+	/*var div1 = $('#div1');
+	$("<img src='../img/cat222.png'>").appendTo(div1);*/
+	/*$("#div1").html("<img src='../img/cat222.png'>");*/
+	var div1 = $('#div1');
+	var img = $("<img src='../img/cat222.png'>");
+	img.addClass('bordered');
+	img.appendTo(div1)
+	img.fadeOut(2000);
+});
+ </script>
+ </head>
+ <body>
+	<div id="div1"></div>
+ </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>텍스트 바꾸기</title>
+  <style>
+	fieldset{border: 3px solid black; width: 20%; height: 20%; background: #f583e1;}
+  </style>
+ 
+ <script>
+$(function(){
+	$('#input1').val('텍스트를 쓰는 곳이었습니다.');
+	$('#textarea1').val('긴 텍스트를 쓴는 곳이었습니다.');
+	$('#select1').val('s2');//s2가 디폴트 값
+	$('#select2').val(['ss1','ss4']);
+});
+ </script>
+ 
+ </head>
+ 
+ <body>
+<form>
+	<fieldset>
+		<legend>제목</legend>
+  <input id="input1" type="text" size="40" value="텍스트 필드입니다."><br><br>
+  <textarea id="textarea1" rows="3" cols="20">처음의 내용입니다.
+  </textarea><br><br>
+  <select id="select1">
+	<option value="s1">한국</option>
+	<option value="s2">미국</option>
+	<option value="s3">영국</option>
+	<option value="s4">독일</option>
+  </select><br><br>
+  <select id="select2" multiple="multiple">
+	<option value="ss1">한국</option>
+	<option value="ss2">미국</option>
+	<option value="ss3">영국</option>
+	<option value="ss4">독일</option>
+  </select>
+  </fieldset>
+</form>
+ </body>
+</html>

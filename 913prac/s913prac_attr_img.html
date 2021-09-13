@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>document</title>
+
+  <style>
+
+  </style>
+ <script>
+$(function(){
+	$('.rollOver').each(function(){
+									var a = $(this);
+									var img = a.find('img');
+									var src_off = img.attr('src');/*속성을 집어넣어줘*/
+									var src_on = src_off.replace('_off','_on');/*속성의 글자 off를 온으로 바꿔라. 그러면 첨부파일의 이름이 바뀜.*/
+
+									$('<img>').attr('src',src_on);
+
+									a.hover(function(){img.attr('src',src_on);},
+											function(){img.attr('src',src_off);}
+											);
+									});
+});
+ </script>
+ </head>
+ <body>
+	<ul>
+		<li>
+			<a href="https://www.icia.co.kr" class="rollOver"><img src="../img/menu01_off.png" width="100" height="50"></a>
+		</li>
+	</ul><br><br><br><br><br><br><br><br>
+	<img src="../img/menu01_off.png" width="100" height="50"><br>
+	<img src="../img/menu01_on.png" width="100" height="50">
+ </body>
+</html>

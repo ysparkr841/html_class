@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kor">
+ <head>
+  <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>document</title>
+
+  <style>
+	div{background: pink; padding: 20px; margin: 0 0 5px;}
+
+  </style>
+ <script>
+$(function(){
+		var div1= $('#div1');
+		div1.click(function(){
+			div1.text('클릭되었습니다.');
+		});
+		var div2= $('#div2');
+		div2.click(function(){
+			div2.text('클릭함.');
+		});
+		var div3= $('#div3');
+		div3.click(function(){
+			div3.text('클릭했음.');
+		});
+		var div4= $('#div4');
+		div4.click(function(){
+			div4.text('클릭');
+		});
+		var div5= $('#div5');
+		div5.click(function(){
+			div5.text('Click');
+		});
+	});
+
+ </script>
+ </head>
+ <body>
+	<div class="clickTest" id="div1">div1</div>
+	<div class="clickTest" id="div2">div2</div>
+	<div class="clickTest" id="div3">div3</div>
+	<div class="clickTest" id="div4">div4</div>
+	<div class="clickTest" id="div5">div5</div>
+
+ </body>
+</html>

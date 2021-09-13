@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<script src="../jquery-3.6.0.min.js"></script>
+  <title>document</title>
+  <style>
+	.bordered{border: 3px solid red}
+	div{background: yellow}
+  </style>
+ <script>
+$(function(){
+	$('#div1').mouseenter(function(){$('#div1').text('왔네요.');
+	});
+	$('#div1').mouseleave(function(){$('#div1').text('떠났네요.');
+	});
+});
+ </script>
+ </head>
+ <body>
+	<div id="div1">div!!!!</div>
+
+ </body>
+</html>
